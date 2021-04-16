@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Whatsapp Clone</string>
+    <string name="welcome_to_whatsapp">Welcome</string>
 </resources>

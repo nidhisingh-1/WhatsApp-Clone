@@ -1,2 +1,2 @@
-# Whatsapp-Clone
-Chat application similar to whatsapp
+# WhatsApp-Clone
+Chat application similar to WhatsApp

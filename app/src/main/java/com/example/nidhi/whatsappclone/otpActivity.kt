@@ -179,11 +179,11 @@ class otpActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun showSignUpActivity() {
-        TODO("Not yet implemented")
+        startActivity(Intent(this, SignUpActivity ::class.java))
     }
 
     private fun showHomeActivity() {
-        TODO("Not yet implemented")
+        startActivity(Intent(this, HomeActivity ::class.java))
     }
 
     private fun setSpannableString() {

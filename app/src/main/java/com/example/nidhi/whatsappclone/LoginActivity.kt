@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         //add hint request
         //next button is enabled only if is not empty and number length is less than 10
         phoneNumberEt.addTextChangedListener {
-            nextBtn.isEnabled = (it.isNullOrEmpty() || it.length < 10)
+            nextBtn.isEnabled = (it.isNullOrEmpty() || it.length <= 10)
         }
 
         nextBtn.setOnClickListener {
@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showOTPactiviy() {
 
-        startActivity(Intent(this, OTPactivity ::class.java).putExtra(PHONE_NUMBER, PhoneNumber))
+        startActivity(Intent(this, otpActivity ::class.java).putExtra(PHONE_NUMBER, PhoneNumber))
         finish()
     }
 }

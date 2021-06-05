@@ -15,6 +15,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
@@ -158,9 +159,10 @@ class otpActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     //First Time Login
                     if (task.result?.additionalUserInfo?.isNewUser == true) {
-                        showSignUpActivity()
+                        startActivity(Intent(this@otpActivity, SignUpActivity::class.java)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
                     } else {
-                        showHomeActivity()
+                        startActivity(Intent(this@otpActivity, HomeActivity::class.java))
                     }
                 } else {
 
@@ -176,14 +178,19 @@ class otpActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun notifyUserAndRetry(s: String) {
 
-    }
+        MaterialAlertDialogBuilder(this).apply {
+            setMessage(s)
+            setCancelable(false)
+            setPositiveButton("OK"){_,_->
+                showLoginActivity()
+            }
+            setNegativeButton("Cancel"){dialog,_->
+                dialog.dismiss()
+            }
+            create()
+            show()
+        }
 
-    private fun showSignUpActivity() {
-        startActivity(Intent(this, SignUpActivity ::class.java))
-    }
-
-    private fun showHomeActivity() {
-        startActivity(Intent(this, HomeActivity ::class.java))
     }
 
     private fun setSpannableString() {

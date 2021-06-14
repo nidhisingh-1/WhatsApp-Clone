@@ -1,4 +1,4 @@
-package com.example.nidhi.whatsappclone
+package com.example.nidhi.whatsappclone.auth
 
 import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
@@ -10,6 +10,9 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nidhi.whatsappclone.MainActivity
+import com.example.nidhi.whatsappclone.R
+import com.example.nidhi.whatsappclone.models.User
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth

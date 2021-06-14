@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatsappClone">
-        <activity android:name=".SplashActivity" android:theme="@style/SplashActivity">
+        <activity android:name=".auth.SplashActivity" android:theme="@style/SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +24,8 @@
         </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".otpActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".auth.SignUpActivity" />
+        <activity android:name=".auth.LoginActivity"/>
         <activity android:name=".MainActivity" />
     </application>
 

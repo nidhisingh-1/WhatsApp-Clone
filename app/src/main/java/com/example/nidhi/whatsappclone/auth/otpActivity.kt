@@ -1,4 +1,4 @@
-package com.example.nidhi.whatsappclone
+package com.example.nidhi.whatsappclone.auth
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -15,6 +15,8 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.example.nidhi.whatsappclone.HomeActivity
+import com.example.nidhi.whatsappclone.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException

@@ -1,8 +1,9 @@
-package com.example.nidhi.whatsappclone
+package com.example.nidhi.whatsappclone.auth
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nidhi.whatsappclone.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SplashActivity : AppCompatActivity() {

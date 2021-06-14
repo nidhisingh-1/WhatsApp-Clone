@@ -1,20 +1,19 @@
-package com.example.nidhi.whatsappclone
+package com.example.nidhi.whatsappclone.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.nidhi.whatsappclone.R
 
+class ChatFragment : Fragment() {
 
-class PeopleFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
     }
 
     override fun onCreateView(
@@ -22,8 +21,7 @@ class PeopleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_people, container, false)
+        return inflater.inflate(R.layout.fragment_chat, container, false)
     }
-
 
 }

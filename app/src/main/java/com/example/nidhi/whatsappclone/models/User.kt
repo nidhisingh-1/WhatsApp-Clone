@@ -1,4 +1,4 @@
-package com.example.nidhi.whatsappclone
+package com.example.nidhi.whatsappclone.models
 
 data class User (
     val name: String,

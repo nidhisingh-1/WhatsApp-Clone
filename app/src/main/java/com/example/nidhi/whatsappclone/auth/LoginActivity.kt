@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
-import com.example.nidhi.whatsappclone.PHONE_NUMBER
 import com.example.nidhi.whatsappclone.R
-import com.example.nidhi.whatsappclone.otpActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -56,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showOTPactiviy() {
 
-        startActivity(Intent(this, otpActivity ::class.java).putExtra(PHONE_NUMBER, PhoneNumber))
+        startActivity(Intent(this, otpActivity::class.java).putExtra(PHONE_NUMBER, PhoneNumber))
         finish()
     }
 }
